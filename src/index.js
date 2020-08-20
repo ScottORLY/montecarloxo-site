@@ -7,12 +7,12 @@ document.body.appendChild(
         <div id={styles.main}>
             <h1 id={styles.title}>Monte Carlo XO</h1>
             <p id={styles.description}>
-                The classic and ubiquitous game of Tic Tac Toe played against a Monte Carlo strategist
+                The classic and ubiquitous game of Tic-tac-toe played against a Monte Carlo simulation.
             </p>
         </div>
         <div id={styles.images}>
             <img className={styles.image} src={phone} />
-            <a href='appstore link'><img className={styles.image} src={badge} /></a>
+            <a><img className={styles.image} src={badge} /></a>
         </div>
         <div id={styles.privacy} >
             <h1>Privacy Policy</h1>
