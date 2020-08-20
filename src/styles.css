@@ -1,9 +1,36 @@
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght,CASL,MONO@300..800,1,1&display=swap'); 
+html { font-family: 'Recursive', sans-serif; }
+
+body { 
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  @apply flex flex-col bg-gray-900 text-gray-100 p-2 mx-auto text-center max-w-lg
+}
+
+#main {
+  @apply text-center
+}
+
+#description {
+  @apply mt-12
+}
+
+#images {
+  @apply my-12 flex flex-col flex-initial 
+}
+
+.image {
+  @apply mx-auto object-contain max-w-full
 }
 
 #app {
-    @apply flex flex-col max-w-screen-lg mx-auto
+  @apply p-4 mt-12
+}
+
+#title {
+  @apply text-5xl
+}
+
+#privacy {
+  @apply mx-auto my-24
 }

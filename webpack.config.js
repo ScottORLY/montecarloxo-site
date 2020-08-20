@@ -10,7 +10,7 @@ module.exports = {
     ],
     output: {
         path: __dirname + '/docs',
-        publicPath: '/d3activate',
+        publicPath: '/',
         filename: 'bundle.js'
     },
     optimization: {
@@ -68,7 +68,6 @@ module.exports = {
                             modules: {
                                 localIdentName: '[local]__[hash:base64:5]'
                             },
-                            localsConvention: 'camelCase',
                             importLoaders: 1
                         }
                     },
@@ -80,7 +79,7 @@ module.exports = {
                 use: ['file-loader']
             },
             {
-              test: /\.(woff(2)?|ttf|eot|svg|csv)(\?v=\d+\.\d+\.\d+)?$/,
+              test: /\.(woff(2)?|ttf|eot|csv)(\?v=\d+\.\d+\.\d+)?$/,
               use: [{
                   loader: 'file-loader',
                   options: {
