@@ -1,15 +1,5 @@
-# d3activate
+# Monte Carlo XO
 
-*thinking with d3-selection like it's the new jquery*
+This is the website for Monte Carlo XO.
 
-install
-
-`npm i`
-
-start dev server at http://localhost:8080/d3activated
-
-`npm start`
-
-build to `docs/` directory
-
-`npm run dist`
+https://montecarloxo.com
