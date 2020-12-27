@@ -1,7 +1,6 @@
 import styles from './styles.css'
 import badge from './svg/appstore_badge.svg'
 import phone from './svg/product.webp'
-import glyph from './svg/glyph.webp'
 
 document.body.appendChild(
     <div id={styles.app} >
@@ -14,7 +13,6 @@ document.body.appendChild(
         <div id={styles.images}>
             <h1>Augmented reality mode coming soon!</h1>
             <img className={styles.image} src={phone} />
-            <img id={styles.glyph} src={glyph} width='100px'/>
         </div>
 
         <div id={styles.badges}>
