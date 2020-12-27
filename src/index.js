@@ -1,6 +1,4 @@
 import styles from './styles.css'
-import badge from './svg/appstore_badge.svg'
-import phone from './svg/product.webp'
 
 document.body.appendChild(
     <div id={styles.app} >
@@ -12,12 +10,12 @@ document.body.appendChild(
         </div>
         <div id={styles.images}>
             <h1>Augmented reality mode coming soon!</h1>
-            <img className={styles.image} src={phone} />
+            <img className={styles.image} src='https://raw.githubusercontent.com/ScottORLY/montecarloxo-site/main/src/svg/product.webp' />
         </div>
 
         <div id={styles.badges}>
             <a href='https://apple.co/3aLanUp'>
-                <img className={styles.image} src={badge} />
+                <img className={styles.image} src='https://raw.githubusercontent.com/ScottORLY/montecarloxo-site/main/src/svg/appstore_badge.svg' />
             </a>
             <img id={styles.qr} src="https://tools-qr-production.s3.amazonaws.com/output/apple-toolbox/8f644d677056487978505e1fd3cb3c37/4505f030-e4ab-4772-a5fa-130fc217ebe2.png" />
         </div>
