@@ -4,7 +4,7 @@ html { font-family: 'Recursive', sans-serif; }
 body { 
   background-size: 100% auto;
   background-repeat: no-repeat;
-  @apply flex flex-col bg-gray-900 text-gray-100 p-2 mx-auto text-center max-w-lg
+  @apply flex flex-col bg-gray-900 text-gray-100 p-2 mx-auto text-center max-w-4xl
 }
 
 #main {
@@ -16,11 +16,11 @@ body {
 }
 
 #images {
-  @apply my-12 flex flex-col flex-initial 
+  @apply mt-12 flex flex-col flex-initial 
 }
 
 .image {
-  @apply mx-auto object-contain max-w-full
+  @apply mx-auto object-contain max-w-full my-8
 }
 
 #app {
@@ -33,4 +33,16 @@ body {
 
 #privacy {
   @apply mx-auto my-24
+}
+
+#qr {
+  @apply max-w-sm mx-auto
+}
+
+#badges {
+  @apply flex flex-col
+}
+
+#glyph {
+  @apply max-w-xs mx-auto
 }

@@ -10,8 +10,7 @@ module.exports = {
     ],
     output: {
         path: __dirname + '/docs',
-        publicPath: '/',
-        filename: 'bundle.js'
+        publicPath: '/'
     },
     optimization: {
         splitChunks: {
@@ -38,7 +37,6 @@ module.exports = {
             },
         })
     ],
-    devtool: isDEV ? 'inline-source-map': 'none',
     module: {
         rules: [
             {
@@ -55,13 +53,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 exclude: /node_modules/,
-                use: [
-                    isDEV ? 'style-loader' :  {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            hmr: false
-                        }
-                    },
+                use: ['style-loader',
                     {
                         loader: 'css-loader',
                         options: {
@@ -75,8 +67,13 @@ module.exports = {
                   ]
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
-                use: ['file-loader']
+                test: /\.(png|svg|jpg|gif|webp)$/,
+                use: [{ loader: 'file-loader', 
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'docs/'
+                    }}
+                ]
             },
             {
               test: /\.(woff(2)?|ttf|eot|csv)(\?v=\d+\.\d+\.\d+)?$/,
@@ -89,10 +86,5 @@ module.exports = {
               }]
           }
         ]
-    },
-    devServer: {
-        contentBase: './dist',
-        compress: true,
-        historyApiFallback: true
     }
 }
