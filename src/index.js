@@ -9,7 +9,7 @@ document.body.appendChild(
             </p>
         </div>
         <div id={styles.images}>
-            <h1>Augmented reality mode coming soon!</h1>
+            <h1>Augmented reality mode available now!</h1>
             <img className={styles.image} src='https://raw.githubusercontent.com/ScottORLY/montecarloxo-site/main/src/svg/product.webp' />
         </div>
 
@@ -17,7 +17,7 @@ document.body.appendChild(
             <a href='https://apple.co/3aLanUp'>
                 <img className={styles.image} src='https://raw.githubusercontent.com/ScottORLY/montecarloxo-site/main/src/svg/appstore_badge.svg' />
             </a>
-            <img id={styles.qr} src="https://tools-qr-production.s3.amazonaws.com/output/apple-toolbox/8f644d677056487978505e1fd3cb3c37/4505f030-e4ab-4772-a5fa-130fc217ebe2.png" />
+            <img id={styles.qr} src="https://tools-qr-production.s3.amazonaws.com/output/apple-toolbox/471e3f52b11997f91faf8b5f1924380f/d42aeb95-db39-4335-8c93-a83acead6999.png"></img>
         </div>
         <div id={styles.privacy} >
             <h1>Privacy Policy</h1>
