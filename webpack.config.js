@@ -20,8 +20,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: 'src/index.html',
-            chunksSortMode: "none",
-
+            chunksSortMode: "none"
         }),
         new MiniCssExtractPlugin({
             filename: '[name].[hash].css',
@@ -76,14 +75,10 @@ module.exports = {
                 ]
             },
             {
-              test: /\.(woff(2)?|ttf|eot|csv)(\?v=\d+\.\d+\.\d+)?$/,
-              use: [{
-                  loader: 'file-loader',
-                  options: {
-                      name: '[name].[ext]',
-                      outputPath: 'fonts/'
-                  }
-              }]
+              test: /\.(woff|woff2)$/,
+              use: {
+                  loader: 'url-loader'
+              }
           }
         ]
     }

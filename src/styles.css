@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght,CASL,MONO@300..800,1,1&display=swap'); 
-html { font-family: 'Recursive', sans-serif; }
+@font-face {
+  font-family: 'Grandstander';
+  src: url('./fonts/Grandstander-SemiBold.woff');
+}
+
+html { 
+  font-family: 'Grandstander', cursive; 
+}
 
 body { 
   background-size: 100% auto;
@@ -45,4 +51,4 @@ body {
 
 #glyph {
   @apply max-w-xs mx-auto
-}
+} 
