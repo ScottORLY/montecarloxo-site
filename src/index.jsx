@@ -1,4 +1,4 @@
-import styles from './styles.css'
+import styles from './styles.module.css'
 
 document.body.appendChild(
     <div id={styles.app} >

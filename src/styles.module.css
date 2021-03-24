@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Grandstander';
-  src: url('./fonts/Grandstander-SemiBold.woff');
+  src: url('/Grandstander-SemiBold.woff');
 }
 
-html { 
+html {
   font-family: 'Grandstander', cursive; 
 }
 
